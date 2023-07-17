@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    font: normal 12px '돋움';
+}
+
+ul, ol {list-style: none;}
+a {text-decoration: none #111;}
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: auto;
+}
+
+header > div {width: 100%;}
+header > div:nth-child(1) {height: 44px; background: #f3f3f3;}
+header > div:nth-child(2) {height: 110px;}
+header > div:nth-child(3) {height: 46px; background: #564f47;}
+
+header > div > * {
+    width: 1126px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+header .top {
+    float: right;
+    margin-top: 6px;
+}
+
+header .ico {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin-right: 30px;
+    background-image: url('../images/sprites.png');
+}
+
+header .ico.user {
+    position: relative;
+    top: 5px;
+    width: 17px;
+    height: 17px;
+    background-position: 0 -504px;
+}
+
+header .ico.cart {
+    width: 17px;
+    height: 17px;
+    background-position: 0 -487px;
+}
+
+header .ico.wish {
+    width: 20px;
+    height: 18px;
+    background-position: 0 -539px;
+}
+
+header .ico .label {
+    position: relative;
+    right: -22px;
+    top: 2px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: #ff6e53;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    font-size: 11px;
+}
+
+header section {
+    position: relative;
+}
+
+header section .logo {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+}
+header section .banner {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+}
+
+header .gnb {
+    width: 100%;
+    height: 100%;
+}
+
+header .gnb > li {
+    float: left;
+    width: 16.66%;
+    height: 100%;
+}
+
+header .gnb > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 46px;
+    font-family: arial;
+    font-size: 15px;
+    font-weight: bold;
+    color: #b0a171;
+    background-color: #464545;
+}
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+main > section {
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+
+main > section:nth-child(1) {height: 480px;}
+main > section:nth-child(2) {height: auto;}
+main > section:nth-child(3) {height: 620px;}
+main > section:nth-child(4) {height: 220px;}
+main > section:nth-child(5) {height: auto;}
+main > section:nth-child(6) {height: 220px;}
+main > section:nth-child(7) {height: auto;}
+
+main > section > article {
+    width: 1126px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+main > section > h3 {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 27px;
+    color: #564f47;
+}
+
+main > section > h3 > strong {
+    font-size: 27px;
+    font-weight: bold;
+    color: #699270;
+}
+
+main > .banner > article {position: relative;}
+
+main > .banner > article > img{position: absolute;}
+
+main > .banner > article > img:nth-child(1) {left: 10px; top: 40px;}
+main > .banner > article > img:nth-child(2) {left: 460px; top: 40px;}
+main > .banner > article > img:nth-child(3) {right: 10px; bottom: 100px;}
+
+main > .new {}
+main > .new > article {
+    height: 480px;
+    border: 1px solid #d4d4d4;
+    box-sizing: border-box;
+}
+
+main > .new > article > div {
+    position: relative;
+    float: left;
+    width: 345px;
+    box-sizing: border-box;
+}
+
+main > .new > article > div:nth-child(1) {
+    width: 434px;
+    height: 100%;
+    background-image: url(../images/main_new_img1.jpg);
+}
+main > .new > article > div:nth-child(2) {
+    height: 50%;
+    border-right: 1px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
+}
+main > .new > article > div:nth-child(3) {
+    height: 50%;
+    border-bottom: 1px solid #d4d4d4;
+}
+main > .new > article > div:nth-child(4) {
+    height: 50%;
+    border-right: 1px solid #d4d4d4;
+}
+main > .new > article > div:nth-child(5) {height: 50%;}
+
+main > .new div > img {position: absolute;}
+main > .new div:nth-child(1) > img {left:0; top: 0;}
+main > .new div:nth-child(2) > img {left:20px; top: 20px;}
+main > .new div:nth-child(3) > img {right:10px; bottom: 10px;}
+main > .new div:nth-child(4) > img {right:0; bottom: 0;}
+main > .new div:nth-child(5) > img {right:0; bottom: 0;}
+
+main > .new div > span {position: absolute;} 
+main > .new div > .price {color: #ef9120; font-size: 30px;}
+main > .new div > .price::after  {content: '원'; color: #ef9120; font-size: 18px;}       
+main > .new div > span > strong {            
+    font-size: 32px;
+    opacity: 1;
+    color: #c3d069;
+    font-weight: bold;
+}
+
+main > .new div:nth-child(1) > .txt {
+    left: 40px;
+    top: 60px;
+    font-size: 27px;
+    color: #564f47;            
+}
+
+main > .new div:nth-child(1) > .tit {
+    left: 40px;
+    top: 116px;
+    font-size: 26px;
+    color: white;
+    padding: 4px 6px;
+    background-image: url('../imgaes/bg_transparent.png');            
+}
+main > .new div:nth-child(1) > .price {right: 20px;bottom: 20px;}
+
+main > .new div:nth-child(2) > .txt {left: 130px; top: 40px; font-size: 16px; color: #564f47;}
+main > .new div:nth-child(2) > .tit {left: 130px; top: 90px;font-size: 28px; color: #899b34}
+main > .new div:nth-child(2) > .price {right: 20px;bottom: 20px;}
+
+main > .new div:nth-child(3) > .txt {left: 30px; top: 40px; font-size: 16px; color: #564f47;}
+main > .new div:nth-child(3) > .tit {left: 30px; top: 70px;font-size: 28px; color: #358a00;}
+main > .new div:nth-child(3) > .price {left: 20px;bottom: 20px;}
+
+main > .new div:nth-child(4) > .txt {left: 30px; top: 30px; font-size: 16px; color: #564f47;}
+main > .new div:nth-child(4) > .tit {left: 30px; top: 80px;font-size: 28px; color: #c51a1a;}
+main > .new div:nth-child(4) > .price {left: 30px;bottom: 20px;}
+
+main > .new div:nth-child(5) > .txt {left: 30px; top: 30px; font-size: 16px; color: #564f47;}
+main > .new div:nth-child(5) > .tit {left: 30px; top: 80px;font-size: 28px; color: #9e7839;}
+main > .new div:nth-child(5) > .price {left: 30px;bottom: 20px;}
+
+main > .master {}
+main > .organic_banner {}
+main > .organic {}
+main > .grain_banner {}
+main > .grain {}
+
+
+
+
+
+
+
+
+
